@@ -1,13 +1,13 @@
 
 //ADD YOUR FIREBASE LINKS HERE
 var firebaseConfig = {
-      apiKey: "AIzaSyCb2_OUFWo2igw1KH3wgY9ecErxOjvns7w",
-      authDomain: "omniversalchat.firebaseapp.com",
-      databaseURL: "https://omniversalchat-default-rtdb.firebaseio.com",
-      projectId: "omniversalchat",
-      storageBucket: "omniversalchat.appspot.com",
-      messagingSenderId: "905382387881",
-      appId: "1:905382387881:web:8e4e4d7fe631083e4f49b8"
+      apiKey: "AIzaSyCTmh8AKDVofiTm44KcA_S5FkyeAQXVHhA",
+      authDomain: "letschat-78a30.firebaseapp.com",
+      databaseURL: "https://letschat-78a30-default-rtdb.firebaseio.com",
+      projectId: "letschat-78a30",
+      storageBucket: "letschat-78a30.appspot.com",
+      messagingSenderId: "505033990163",
+      appId: "1:505033990163:web:6d9a35ffe33833696c1fe6"
     };
 firebase.initialize(firebaseConfig);
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
